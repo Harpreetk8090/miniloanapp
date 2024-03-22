@@ -1,0 +1,41 @@
+
+<div class=" col-10 mx-auto col-sm-6 offset-sm-3 mt-5 ">
+    <h3 class="text-center" style="color: #143B64;">Log in to your Bank</h3>
+    <div class="card shadow-lg mt-3">
+        <div style="background-color: #143b64;" class="card-header text-light">
+          Loan Application
+        </div>
+        <div class="card-body">
+            <form   [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+
+                <div class="row mt-3">
+                  
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" placeholder="Enter your First name" formControlName="firstName">
+                    <span *ngFor="let validation of account_validation_messages.firstName">
+                      <span style="color: red;"
+                        *ngIf="loginForm.controls['firstName'].hasError(validation.type) && (loginForm.controls['firstName'].dirty || loginForm.controls['firstName'].touched)">{{validation.message}}</span>
+                    </span>
+                </div>
+
+                <div class="row mt-3">
+                    
+                      <label for="inputPassword4">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter your Password" formControlName="password">
+                      <span *ngFor="let validation of account_validation_messages.password">
+                        <span style="color: red;"
+                            *ngIf="loginForm.controls['password'].hasError(validation.type) && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">{{validation.message}}</span>
+                          </span>
+                  </div>
+
+                 
+                 
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary mt-3" [disabled]="loginForm.invalid" style="margin-right: 5px; background-color: #143B64">Login</button>
+                    <button class="btn btn-primary mt-3" id="btnSignUp" routerLink="/makeloan" style="background-color: #143B64;">New User?</button>
+                  </div>
+                 
+              </form>
+        </div>
+      </div>
+</div>

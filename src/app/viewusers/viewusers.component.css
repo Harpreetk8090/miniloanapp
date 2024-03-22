@@ -1,0 +1,11 @@
+caption {
+    margin-top: 3px;
+    caption-side: top;
+    text-align: center; /* Optionally center the caption text */
+    font-weight: bold; /* Optionally adjust caption font weight */
+  }
+  @media (max-width: 575.98px) {
+    .table-responsive .mycaption {
+        text-align: center;
+    }
+}

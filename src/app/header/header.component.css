@@ -1,0 +1,26 @@
+.navbar-nav .nav-item .nav-link {
+  color: rgb(60, 58, 58);
+  /* Change text color to white */
+  background-color: rgb(244, 244, 244);
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+  /* Change text color on hover */
+
+}
+
+
+
+.mynav {
+  background-color: rgb(244, 244, 244);
+  color: rgb(60, 58, 58);
+ 
+  
+}
+
+/* .navbar-brand {
+  color: white;
+  margin-left: 5px;
+} */

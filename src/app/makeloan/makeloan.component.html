@@ -1,0 +1,78 @@
+<div class=" col-10 mx-auto col-md-6 offset-md-3 mt-5 ">
+  <h3 class="text-center">Register to create loan</h3>
+  <div class="card shadow-lg mt-3">
+    <div style="background-color: #143b64;" class="card-header text-light">
+      Loan Application
+    </div>
+    <div class="card-body">
+      <form [formGroup]="signForm" (ngSubmit)="onFormSubmit()">
+
+        <div class="row mt-3">
+          <div class="col">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" placeholder="First name" formControlName="firstName">
+            <span *ngFor="let validation of account_validation_messages.firstName">
+              <span style="color: red;"
+                *ngIf="signForm.controls['firstName'].hasError(validation.type) && (signForm.controls['firstName'].dirty || signForm.controls['firstName'].touched)">{{validation.message}}</span>
+            </span>
+          </div>
+          <div class="col">
+            <label for="validationCustom01">Last name</label>
+            <input type="text" class="form-control" placeholder="Last name" formControlName="lastName">
+            <span *ngFor="let validation of account_validation_messages.lastName">
+              <span style="color: red;"
+                *ngIf="signForm.controls['lastName'].hasError(validation.type) && (signForm.controls['lastName'].dirty || signForm.controls['lastName'].touched)">{{validation.message}}</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+            <span *ngFor="let validation of account_validation_messages.email">
+              <span style="color: red;"
+                *ngIf="signForm.controls['email'].hasError(validation.type) && (signForm.controls['email'].dirty || signForm.controls['email'].touched)">{{validation.message}}</span>
+            </span>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" formControlName="password">
+            <span *ngFor="let validation of account_validation_messages.password">
+            <span style="color: red;"
+                *ngIf="signForm.controls['password'].hasError(validation.type) && (signForm.controls['password'].dirty || signForm.controls['password'].touched)">{{validation.message}}</span>
+              </span>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col">
+            <label for="loanterm">Loan Term</label>
+            <input class="form-control" type="number" id="loanterm" name="loanterm" formControlName="loanterm"
+              placeholder="Enter the term in weeks" min="0">
+              <span *ngFor="let validation of account_validation_messages.loanterm">
+                <span style="color: red;"
+                    *ngIf="signForm.controls['loanterm'].hasError(validation.type) && (signForm.controls['loanterm'].dirty || signForm.controls['loanterm'].touched)">{{validation.message}}</span>
+                  </span>
+          </div>
+          <div class="col">
+            <label for="loanterm">Loan Amount</label>
+            <input class="form-control" type="number" id="loanamount" name="loanamount" formControlName="loanamount"
+              placeholder="Enter the amount in Rupees" min="5000">
+              <span *ngFor="let validation of account_validation_messages.loanamount">
+                <span style="color: red;"
+                    *ngIf="signForm.controls['loanamount'].hasError(validation.type) && (signForm.controls['loanamount'].dirty || signForm.controls['loanamount'].touched)">{{validation.message}}</span>
+                  </span>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary mt-3" [disabled]="signForm.invalid"
+            style="margin-right: 3px;background-color: #143b64">Apply</button>
+          <a type="submit" class="btn btn-primary mt-3" style="background-color: #143b64;" routerLink="/login">Back to
+            Login</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

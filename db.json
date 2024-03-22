@@ -1,0 +1,395 @@
+{
+  "users": [
+    {
+      "id": "e6d1",
+      "firstName": "admin",
+      "lastName": "adminuser",
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "loanterm": 2,
+      "loanamount": 20000,
+      "role": "admin",
+      "isactive": "true"
+    },
+    {
+      "id": "07f6",
+      "firstName": "govinda",
+      "lastName": "govinda",
+      "email": "govinda@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 5,
+      "loanamount": 45000,
+      "role": "",
+      "isactive": "false",
+      "repayment": "false",
+      "installments": ""
+    },
+    {
+      "id": "b459",
+      "firstName": "rajesh",
+      "lastName": "ukrakesh",
+      "email": "rajesh@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 3,
+      "loanamount": 30000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "February 28, 2024",
+          "amount": 10000,
+          "payment": "Paid"
+        },
+        {
+          "date": "March 6, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 13, 2024",
+          "amount": 10000,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "cea0",
+      "firstName": "manjeet",
+      "lastName": "singh",
+      "email": "manjeet@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 4,
+      "loanamount": 40000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "February 28, 2024",
+          "amount": 10000,
+          "payment": "Paid"
+        },
+        {
+          "date": "March 6, 2024",
+          "amount": 10000,
+          "payment": "Paid"
+        },
+        {
+          "date": "March 13, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 20, 2024",
+          "amount": 10000,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "5b03",
+      "firstName": "renukush",
+      "lastName": "khush",
+      "email": "renu@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 6,
+      "loanamount": 300000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "February 28, 2024",
+          "amount": 50000,
+          "payment": ""
+        },
+        {
+          "date": "March 6, 2024",
+          "amount": 50000,
+          "payment": ""
+        },
+        {
+          "date": "March 13, 2024",
+          "amount": 50000,
+          "payment": ""
+        },
+        {
+          "date": "March 20, 2024",
+          "amount": 50000,
+          "payment": ""
+        },
+        {
+          "date": "March 27, 2024",
+          "amount": 50000,
+          "payment": ""
+        },
+        {
+          "date": "April 3, 2024",
+          "amount": 50000,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "5d7b",
+      "firstName": "gopalkrishna",
+      "lastName": "dwivedi",
+      "email": "gopal@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 7,
+      "loanamount": 70000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "February 28, 2024",
+          "amount": 10000,
+          "payment": "Paid"
+        },
+        {
+          "date": "March 6, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 13, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 20, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 27, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "April 3, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "April 10, 2024",
+          "amount": 10000,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "8b75",
+      "firstName": "Koyal",
+      "lastName": "Srivastava",
+      "email": "koyal@123gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 4,
+      "loanamount": 40000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "March 11, 2024",
+          "amount": 10000,
+          "payment": "Pending"
+        },
+        {
+          "date": "March 18, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "March 25, 2024",
+          "amount": 10000,
+          "payment": ""
+        },
+        {
+          "date": "April 1, 2024",
+          "amount": 10000,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "2fe9",
+      "firstName": "amyra",
+      "lastName": "netan",
+      "email": "amyra@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 5,
+      "loanamount": 56000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "March 29, 2024",
+          "amount": 11200,
+          "payment": "Paid"
+        },
+        {
+          "date": "April 5, 2024",
+          "amount": 11200,
+          "payment": ""
+        },
+        {
+          "date": "April 12, 2024",
+          "amount": 11200,
+          "payment": ""
+        },
+        {
+          "date": "April 19, 2024",
+          "amount": 11200,
+          "payment": ""
+        },
+        {
+          "date": "April 26, 2024",
+          "amount": 11200,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "43d6",
+      "firstName": "Kanchan",
+      "lastName": "Sharma",
+      "email": "kanchan@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 6,
+      "loanamount": 35000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "March 29, 2024",
+          "amount": 5833.333333333333,
+          "payment": "Paid"
+        },
+        {
+          "date": "April 5, 2024",
+          "amount": 5833.333333333333,
+          "payment": "Paid"
+        },
+        {
+          "date": "April 12, 2024",
+          "amount": 5833.333333333333,
+          "payment": ""
+        },
+        {
+          "date": "April 19, 2024",
+          "amount": 5833.333333333333,
+          "payment": ""
+        },
+        {
+          "date": "April 26, 2024",
+          "amount": 5833.333333333333,
+          "payment": ""
+        },
+        {
+          "date": "May 3, 2024",
+          "amount": 5833.333333333336,
+          "payment": ""
+        }
+      ]
+    },
+    {
+      "id": "a42b",
+      "firstName": "Poonam",
+      "lastName": "Gupta",
+      "email": "poonam@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 6,
+      "loanamount": 65000,
+      "role": "",
+      "isactive": "false",
+      "repayment": "false",
+      "installments": ""
+    },
+    {
+      "id": "7a53",
+      "firstName": "Sankat",
+      "lastName": "Rehab",
+      "email": "sankat@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 8,
+      "loanamount": 45000,
+      "role": "",
+      "isactive": "Declined",
+      "repayment": "false",
+      "installments": ""
+    },
+    {
+      "id": "183b",
+      "firstName": "Sunny",
+      "lastName": "Sodhi",
+      "email": "sunny@gmail.com",
+      "password": "Myroot@123",
+      "loanterm": 5,
+      "loanamount": 5000,
+      "role": "",
+      "isactive": "Approved",
+      "repayment": "false",
+      "installments": [
+        {
+          "date": "March 29, 2024",
+          "amount": 1000,
+          "payment": "Paid"
+        },
+        {
+          "date": "April 5, 2024",
+          "amount": 1000,
+          "payment": ""
+        },
+        {
+          "date": "April 12, 2024",
+          "amount": 1000,
+          "payment": ""
+        },
+        {
+          "date": "April 19, 2024",
+          "amount": 1000,
+          "payment": ""
+        },
+        {
+          "date": "April 26, 2024",
+          "amount": 1000,
+          "payment": ""
+        }
+      ]
+    }
+  ],
+  "mystatus": [
+    {
+      "code": "Pending",
+      "name": "Pending",
+      "id": "10c8"
+    },
+    {
+      "code": "Approved",
+      "name": "Approved",
+      "id": "347c"
+    },
+    {
+      "code": "Declined",
+      "name": "Declined",
+      "id": "344c"
+    }
+  ],
+  "repaymentstatus": [
+    {
+      "name": "Paid",
+      "code": "Paid",
+      "id": "126c"
+    },
+    {
+      "name": "Pending",
+      "code": "Pending",
+      "id": "5290"
+    }
+  ]
+}

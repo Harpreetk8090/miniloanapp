@@ -1,0 +1,6 @@
+caption {
+    margin-top: 3px;
+    caption-side: top;
+    text-align: center; /* Optionally center the caption text */
+    font-weight: bold; /* Optionally adjust caption font weight */
+  }

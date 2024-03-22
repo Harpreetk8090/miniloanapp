@@ -1,0 +1,81 @@
+<div class="table-responsive col-10 mx-auto" >
+
+  <table class="table mt-3 table-striped table-hover table-bordered">
+    <caption>List of all loans : {{userList?.length}}</caption>
+    <thead>
+      <tr class="text-center">
+        <th scope="col">Sr.No</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email Address</th>
+        <th scope="col">Loan Term</th>
+        <th scope="col">Loan Amount</th>
+        <th scope="col">Status</th>
+        <th scope="col">Role</th>
+
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let ele of paginatedData; let i=index">
+        <th scope="row">{{getSerialNumber(i)}}</th>
+        <td>{{ele.firstName}}</td>
+        <td>{{ele.lastName}}</td>
+        <td>{{ele.email}}</td>
+        <td>{{ele.loanterm}}</td>
+        <td>{{ele.loanamount}}</td>
+        <td>{{ele.isactive==='false'? 'Pending': ele.isactive}}</td>
+        <td>{{ele.role === ''? 'user' : ele.role}}</td>
+
+        <td *ngIf="ele.role!=='admin'" class="d-flex justify-content-center ">
+          <button (click)="onEdit(ele)" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Edit</button>
+          <button (click)="deleteUser(ele)" class="btn btn-danger mx-3">Delete</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <app-pagination [totalItems]="userList.length" (onClick)="changePage($event)" [currentPage]="currentPage"
+    [itemsPerPage]="itemsPerPage"></app-pagination>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  style="margin-top: 130px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update customer details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="editForm" (ngSubmit)="updateUser()">
+
+
+
+
+          <div class="row">
+            <div class="form-group ">
+              <label for="inputEmail4">Status</label>
+              <select class="form-select mt-2" aria-label="Default select example" formControlName="mystatus">
+
+                <option *ngFor="let item of roleList" [value]="item.code">{{item.name}}</option>
+
+              </select>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+
+
+
+        </form>
+
+      </div>
+    </div>
+  </div>

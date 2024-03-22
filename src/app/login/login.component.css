@@ -1,0 +1,6 @@
+@media screen and(max-width: 576px){
+    .loan-container{
+        width: 85%;
+        max-width: fit-content;
+    }
+}
